@@ -171,6 +171,7 @@ const menuProps = schedule
 
 #### **Depois:**
 
+{% raw %}
 ```jsx
 const MessageActions = ({ onSend, onSaveDraft, schedule, disableSend }) => {
   // 🔹 Validação adicional: se agendamento, verificar se não está desabilitado
@@ -212,6 +213,7 @@ const MessageActions = ({ onSend, onSaveDraft, schedule, disableSend }) => {
   );
 };
 ```
+{% endraw %}
 
 **Benefícios:**
 

@@ -205,6 +205,7 @@ export const useMessages = () => {
 
 ### Context API
 
+{% raw %}
 ```javascript
 // ✅ Padrão de Context com Provider
 import React, { createContext, useContext, useState } from 'react';
@@ -234,6 +235,7 @@ export const useMessageContext = () => {
   return context;
 };
 ```
+{% endraw %}
 
 ### Service Layer
 

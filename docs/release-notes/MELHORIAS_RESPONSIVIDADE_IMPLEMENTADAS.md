@@ -385,6 +385,7 @@ useEffect(() => {
 
 **Bordas vermelhas em campos obrigatórios:**
 
+{% raw %}
 ```jsx
 <DatePicker
   styles={{
@@ -398,6 +399,7 @@ useEffect(() => {
   }}
 />
 ```
+{% endraw %}
 
 **Mensagens de erro mais claras:**
 
