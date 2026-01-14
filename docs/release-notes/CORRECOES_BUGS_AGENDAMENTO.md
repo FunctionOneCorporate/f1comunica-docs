@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # 🐛 Correções de Bugs - Agendamento de Mensagens
 
 **Data:** 20 de Dezembro de 2025  
@@ -89,7 +93,7 @@ const ScheduleOptions = ({
 
 ### 2. ❌ **Valores de Agendamento Não Anulados ao Selecionar "Agora"**
 
-#### **Problema:**
+#### **Problema - Estado Persistente:**
 
 Ao selecionar "Enviar Agora" após ter escolhido "Agendar", os campos `date` e `time` permaneciam preenchidos internamente, podendo causar envio acidental de mensagem agendada.
 
@@ -144,7 +148,7 @@ const validate = useCallback(() => {
 
 ### 3. ❌ **Botão "Salvar Mensagem Agendada" Habilitado Sem Campos Obrigatórios**
 
-#### **Problema:**
+#### **Problema - Validação Ausente:**
 
 O componente `MessageActions.js` não validava se os campos obrigatórios de agendamento estavam preenchidos, permitindo salvar mensagem agendada inválida.
 
@@ -220,7 +224,7 @@ const MessageActions = ({ onSend, onSaveDraft, schedule, disableSend }) => {
 
 ### 4. ❌ **Falta de Validação Final do Payload Antes de Enviar**
 
-#### **Problema:**
+#### **Problema - Payload Sem Verificação:**
 
 Mesmo com validação no frontend, era possível (por bug ou manipulação) enviar payload com data inválida.
 
@@ -319,7 +323,7 @@ const onSend = async () => {
 
 ### 5. ❌ **Breakpoint Incorreto - Componentes Empilhados em 1020x790**
 
-#### **Problema:**
+#### **Problema - Responsividade:**
 
 Na resolução 1020x790 (relatada pelo usuário), os componentes ficavam empilhados verticalmente, tornando impossível criar mensagens pois não havia espaço suficiente para visualizar tudo.
 

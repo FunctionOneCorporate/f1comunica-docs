@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # 📱 Melhorias de Responsividade e UX - F1 Comunica
 
 **Data:** 20 de Dezembro de 2025  

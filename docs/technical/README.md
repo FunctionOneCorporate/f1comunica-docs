@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # 🔧 Guia Técnico - F1 Comunica Front
 
 > **Documentação técnica completa para desenvolvedores**  

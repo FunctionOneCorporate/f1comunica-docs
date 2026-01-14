@@ -1,0 +1,38 @@
+# Jekyll configuration for GitHub Pages
+title: F1Comunica - Documentação
+description: Documentação técnica e manual do usuário do FCConecta
+
+# Tema do GitHub Pages
+theme: jekyll-theme-primer
+
+# Configurações importantes para evitar erros de Liquid em blocos de código
+# Isso impede que {{ }} dentro de código seja interpretado como variáveis Liquid
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Excluir arquivos do processamento
+exclude:
+  - .git
+  - .gitignore
+  - .vscode
+  - README.md
+  - node_modules
+  - vendor
+
+# Incluir pasta docs
+include:
+  - docs
+
+# Configuração de plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
