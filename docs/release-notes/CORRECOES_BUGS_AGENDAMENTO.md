@@ -203,7 +203,6 @@ const MessageActions = ({ onSend, onSaveDraft, schedule, disableSend }) => {
 
   return (
     <div className="message-actions-container">
-      {/* ... */}
       <PrimaryButton
         text="Finalizar"
         menuProps={{ items: menuProps }}
